@@ -17,3 +17,18 @@ def show_phone_book(phone_book):
     else:
         for id, item in enumerate(phone_book):
             print(id, *item)
+
+
+def input_path():
+    path = input('Введите имя файла: ')
+    return path
+
+
+def input_contact():
+    name_contact = input('Введите ФИО контакта: ')
+    phone_contact = input('Введите номер контакта: ')
+    comment_contact = input('Введите коментарий: ')
+    return (name_contact, phone_contact, comment_contact)
+
+
+    

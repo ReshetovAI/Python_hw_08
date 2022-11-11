@@ -22,3 +22,11 @@ def open_file():
     for item in data:
         contact = item.replace('\n', '').split(';')
         phone_book.append(contact)
+
+def new_contact(contact):
+    global phone_book
+    phone_book.append(list(contact))
+
+def change_contact(id, choise, value):
+    global phone_book
+    phone_book [int(id)][int(choise)] = value
