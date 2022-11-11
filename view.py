@@ -31,4 +31,13 @@ def input_contact():
     return (name_contact, phone_contact, comment_contact)
 
 
-    
+def input_del():
+    id = int(input('Введите номер элемента для удаления: '))
+    return id
+
+
+def input_search():
+    print('Введите параметр для поиска: ')
+    id = input('0 - ФИО, 1 - Телефон, 2 - Комментарий, 3 - Отмена')
+    value = input('Введите значение для поиска')
+    return id, value

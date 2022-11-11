@@ -23,10 +23,24 @@ def open_file():
         contact = item.replace('\n', '').split(';')
         phone_book.append(contact)
 
+
 def new_contact(contact):
     global phone_book
     phone_book.append(list(contact))
 
+
 def change_contact(id, choise, value):
     global phone_book
-    phone_book [int(id)][int(choise)] = value
+    phone_book[int(id)][int(choise)] = value
+
+    def del_contact(id):
+    global phone_book
+    phone_book.pop(id)
+
+
+def search_contact(id, value):
+    global phone_book
+    global search_phone_book
+    for item in phone_book:
+        if item[int(id)] == value:
+            search_phone_book.append(item)
